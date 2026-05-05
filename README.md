@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)](https://www.typescriptlang.org)
 [![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwindcss)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Live demo](https://img.shields.io/badge/demo-GitHub%20Pages-222?logo=github)](https://kassieiii.github.io/rag-chat-ui/?demo=1)
+[![Live demo](https://img.shields.io/badge/demo-Vercel-000?logo=vercel)](https://rag-chat-ui-roan.vercel.app/?demo=1)
 
 Streaming chat UI for the [**rag-docs**](https://github.com/KassieIII/rag-docs)
 RAG API. Token-by-token answers via Server-Sent Events, citations rendered
@@ -18,7 +18,7 @@ with **Next.js 16 + React 19** on the App Router.
 > Ollama). Together they ship a self-hostable, end-to-end RAG product
 > stack with no SaaS lock-in.
 
-[![rag-chat-ui streaming demo](public/screenshots/rag-chat-ui-demo.png)](https://kassieiii.github.io/rag-chat-ui/?demo=1)
+[![rag-chat-ui streaming demo](public/screenshots/rag-chat-ui-demo.png)](https://rag-chat-ui-roan.vercel.app/?demo=1)
 
 The public demo runs in `?demo=1` mode, which replays a deterministic mock SSE
 stream in the browser. The production path still talks to a real `rag-docs`
@@ -116,9 +116,8 @@ and deterministic.
 
 ## Deploying
 
-- **Live demo**: GitHub Pages builds a static export on every push to `main`.
-  Open <https://kassieiii.github.io/rag-chat-ui/?demo=1> for the recruiter-safe
-  mock stream, no backend required.
+- **Live demo**: Vercel hosts a recruiter-safe mock stream at
+  <https://rag-chat-ui-roan.vercel.app/?demo=1>, no backend required.
 - **Vercel**: Import the repo, set `NEXT_PUBLIC_API_URL` to a publicly
   reachable rag-docs host. Done.
 - **Self-host**: `npm run build && npm start`, or `docker build` with
