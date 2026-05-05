@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 250 250 250;
+    --surface: 255 255 255;
+    --border: 226 232 240;
+    --fg: 15 23 42;
+    --muted: 100 116 139;
+  }
+
+  .dark {
+    --bg: 9 11 20;
+    --surface: 17 22 35;
+    --border: 39 47 71;
+    --fg: 226 232 240;
+    --muted: 148 163 184;
+  }
+
+  html,
+  body {
+    background: rgb(var(--bg));
+    color: rgb(var(--fg));
+  }
+
+  body {
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: rgb(99 102 241 / 0.35);
+  }
+}
+
+@layer components {
+  .surface {
+    @apply rounded-2xl border bg-[rgb(var(--surface))];
+    border-color: rgb(var(--border));
+  }
+  .muted {
+    color: rgb(var(--muted));
+  }
+}
