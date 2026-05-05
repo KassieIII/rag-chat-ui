@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "rag-chat-ui — streaming RAG chat",
   description:
-    "Next.js 15 streaming chat UI for the rag-docs API. SSE token streaming with live citations and dark mode.",
+    "Next.js 16 streaming chat UI for the rag-docs API. SSE token streaming with live citations and dark mode.",
 };
 
 const themeBootstrap = `

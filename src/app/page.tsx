@@ -104,7 +104,7 @@ export default function HomePage() {
       <ChatInput onSubmit={send} busy={busy} onAbort={abort} />
 
       <footer className="text-xs muted">
-        Backend: <code className="font-mono">{apiBaseUrl()}</code> · Built with Next.js 15 + React 19
+        Backend: <code className="font-mono" suppressHydrationWarning>{apiBaseUrl()}</code> · Built with Next.js 16 + React 19
       </footer>
     </main>
   );
